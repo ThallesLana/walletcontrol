@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "502307851823",
+    "firebase_url": "https://wallet-control-wc-default-rtdb.firebaseio.com",
+    "project_id": "wallet-control-wc",
+    "storage_bucket": "wallet-control-wc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:502307851823:android:b132e0206ea863379200da",
+        "android_client_info": {
+          "package_name": "com.wc.walletcontrol"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "502307851823-po14mh07klqfqqtl9cnej4sjv01fi2k6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.wc.walletcontrol",
+            "certificate_hash": "4313e964dc42fc8fbc318cc44db68028e876a2dd"
+          }
+        },
+        {
+          "client_id": "502307851823-gbe7tunphptcro1avvvlj9u4f4ciuiq8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiPQdlPChPxpAwHwzGldgWtkMReVc4ir8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "502307851823-gbe7tunphptcro1avvvlj9u4f4ciuiq8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
