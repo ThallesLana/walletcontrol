@@ -48,6 +48,8 @@ public class MainActivity extends IntroActivity {
         addSlide( new FragmentSlide.Builder()
                 .background(android.R.color.white)
                 .fragment(R.layout.intro_cadastro)
+                .canGoBackward(true)
+                .canGoForward(false)
                 .build());
     }
 

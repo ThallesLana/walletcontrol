@@ -7,16 +7,16 @@
     android:background="@color/RoxoC">
 
     <ImageView
-        android:id="@+id/WelcomeImg1"
-        android:layout_width="260dp"
-        android:layout_height="260dp"
+        android:id="@+id/WelcomeImg"
+        android:layout_width="330dp"
+        android:layout_height="330dp"
         android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toTopOf="@+id/textView4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_chainStyle="packed"
-        app:srcCompat="@drawable/tres"
+        app:srcCompat="@drawable/wp3"
         tools:ignore="ContentDescription" />
 
     <TextView
@@ -27,12 +27,12 @@
         android:text="Nunca mais esqueça de\n pagar uma conta"
         android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="18sp"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/textView5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/WelcomeImg1"
+        app:layout_constraintTop_toBottomOf="@+id/WelcomeImg"
         tools:ignore="HardcodedText" />
 
     <TextView
