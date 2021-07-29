@@ -13,4 +13,7 @@
     <color name="AzulE">#3F37C9</color>
     <color name="RoxoC">#7209B7</color>
     <color name="RoxoE">#560BAD</color>
+    <color name="colorPrimary">#560BAD</color>
+    <color name="colorPrimaryDark">#3F37C9</color>
+    <color name="colorAccent">#edeaf1</color>
 </resources>
