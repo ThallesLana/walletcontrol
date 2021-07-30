@@ -4,16 +4,11 @@ public class Usuario {
 
     private String nome;
     private String email;
-    private String cpf;
-    private String tel;
     private String senha;
 
-    // construtor
     public Usuario() {
-
     }
 
-    // getter and setter
     public String getNome() {
         return nome;
     }
@@ -28,22 +23,6 @@ public class Usuario {
 
     public void setEmail(String email) {
         this.email = email;
-    }
-
-    public String getCpf() {
-        return cpf;
-    }
-
-    public void setCpf(String cpf) {
-        this.cpf = cpf;
-    }
-
-    public String getTel() {
-        return tel;
-    }
-
-    public void setTel(String tel) {
-        this.tel = tel;
     }
 
     public String getSenha() {

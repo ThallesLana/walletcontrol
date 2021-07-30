@@ -19,7 +19,7 @@ import com.wc.walletcontrol.model.Usuario;
 
 public class CadastroActivity extends AppCompatActivity {
 
-    private EditText campoNome, campoEmail, campoCpf, campoTel, campoSenha;
+    private EditText campoNome, campoEmail, campoSenha;
     private Button botaoCadastrar;
     private FirebaseAuth autenticacao;
     private Usuario usuario;
@@ -31,8 +31,6 @@ public class CadastroActivity extends AppCompatActivity {
 
         campoNome   = findViewById(R.id.editName);
         campoEmail  = findViewById(R.id.editEmail);
-        campoCpf    = findViewById(R.id.editCpf);
-        campoTel    = findViewById(R.id.editPhone);
         campoSenha  = findViewById(R.id.editPassword);
         botaoCadastrar = findViewById(R.id.buttonCad);
 
@@ -42,40 +40,27 @@ public class CadastroActivity extends AppCompatActivity {
 
                 String textoNome    = campoNome.getText().toString();
                 String textoEmail   = campoEmail.getText().toString();
-                String textoCpf     = campoCpf.getText().toString();
-                String textoTel     = campoTel.getText().toString();
                 String textoSenha   = campoSenha.getText().toString();
 
                 // Valida se os campos foram preenchidos
 
                 if ( !textoNome.isEmpty() ){
                     if ( !textoEmail.isEmpty() ){
-                        if ( !textoCpf.isEmpty() ){
-                            if ( !textoTel.isEmpty() ){
-                                if ( !textoSenha.isEmpty() ){
-                                    usuario = new Usuario();
-                                    usuario.setNome( textoNome );
-                                    usuario.setEmail( textoEmail );
-                                    usuario.setCpf( textoCpf );
-                                    usuario.setTel( textoTel );
-                                    usuario.setSenha( textoSenha );
-                                    cadastrarUsuario();
-                                }else{
-                                    Toast.makeText(CadastroActivity.this, "Preencha o campo Senha!", Toast.LENGTH_SHORT).show();
-                                }
-                            }else{
-                                Toast.makeText(CadastroActivity.this, "Preencha o campo Telefone!", Toast.LENGTH_SHORT).show();
-                            }
-                        }else{
-                            Toast.makeText(CadastroActivity.this, "Preencha o campo CPF!", Toast.LENGTH_SHORT).show();
-                        }
+                       if ( !textoSenha.isEmpty() ){
+                            usuario = new Usuario();
+                            usuario.setNome( textoNome );
+                            usuario.setEmail( textoEmail );
+                            usuario.setSenha( textoSenha );
+                            cadastrarUsuario();
+                       }else {
+                           Toast.makeText(CadastroActivity.this, "Preencha o campo Senha!", Toast.LENGTH_SHORT).show();
+                       }
                     }else{
                         Toast.makeText(CadastroActivity.this, "Preencha o campo Email!", Toast.LENGTH_SHORT).show();
                     }
                 }else{
                     Toast.makeText(CadastroActivity.this, "Preencha o campo Nome!", Toast.LENGTH_SHORT).show();
                 }
-
             }
         });
     }
@@ -89,7 +74,7 @@ public class CadastroActivity extends AppCompatActivity {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if ( task.isSuccessful() ){
-                    Toast.makeText(CadastroActivity.this, "Suceso ao cadastrar o usúario!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(CadastroActivity.this, "Sucesso ao cadastrar o usúario!", Toast.LENGTH_SHORT).show();
                 }else {
                     Toast.makeText(CadastroActivity.this, "Erro ao cadastrar o usúario!", Toast.LENGTH_SHORT).show();
                 }

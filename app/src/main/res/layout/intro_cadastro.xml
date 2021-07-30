@@ -21,6 +21,20 @@
         app:layout_constraintVertical_chainStyle="packed"
         tools:ignore="HardcodedText" />
 
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Junte-se a nós nessa jornada em busca\n da sua independencia financeira!"
+        android:textAlignment="center"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="HardcodedText" />
+
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
@@ -51,18 +65,5 @@
         app:layout_constraintTop_toBottomOf="@+id/button"
         tools:ignore="HardcodedText" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Junte-se a nós nessa jornada em busca\n da sua independencia financeira!"
-        android:textAlignment="center"
-        android:textColor="@android:color/darker_gray"
-        android:textSize="14sp"
-        app:layout_constraintBottom_toTopOf="@+id/button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        tools:ignore="HardcodedText" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -8,7 +8,7 @@
 
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="0dp"
+        android:layout_width="347dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
@@ -26,7 +26,7 @@
 
     <EditText
         android:id="@+id/editName"
-        android:layout_width="0dp"
+        android:layout_width="347dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
@@ -44,7 +44,7 @@
 
     <EditText
         android:id="@+id/editEmail"
-        android:layout_width="0dp"
+        android:layout_width="347dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
@@ -54,15 +54,16 @@
         android:ems="10"
         android:hint="Email"
         android:inputType="textWebEmailAddress"
-        app:layout_constraintBottom_toTopOf="@+id/editCpf"
+        app:layout_constraintBottom_toTopOf="@+id/editPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editName"
         tools:ignore="Autofill,HardcodedText,RtlHardcoded" />
 
+
     <EditText
         android:id="@+id/editPassword"
-        android:layout_width="0dp"
+        android:layout_width="347dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
@@ -74,12 +75,12 @@
         app:layout_constraintBottom_toTopOf="@+id/buttonCad"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editPhone"
+        app:layout_constraintTop_toBottomOf="@+id/editEmail"
         tools:ignore="Autofill,HardcodedText,RtlHardcoded" />
 
     <Button
         android:id="@+id/buttonCad"
-        android:layout_width="0dp"
+        android:layout_width="347dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="16dp"
@@ -95,7 +96,7 @@
 
     <TextView
         android:id="@+id/textView7"
-        android:layout_width="0dp"
+        android:layout_width="347dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="8dp"
@@ -108,40 +109,4 @@
         app:layout_constraintTop_toBottomOf="@+id/buttonCad"
         tools:ignore="HardcodedText" />
 
-    <EditText
-        android:id="@+id/editCpf"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginBottom="8dp"
-        android:drawableLeft="@drawable/ic_cpf"
-        android:drawablePadding="5dp"
-        android:ems="10"
-        android:hint="CPF"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/editPhone"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editEmail"
-        tools:ignore="Autofill,HardcodedText,RtlHardcoded" />
-
-    <EditText
-        android:id="@+id/editPhone"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginBottom="8dp"
-        android:drawableLeft="@drawable/ic_phone"
-        android:drawablePadding="5dp"
-        android:ems="10"
-        android:hint="Telefone"
-        android:inputType="phone"
-        app:layout_constraintBottom_toTopOf="@+id/editPassword"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editCpf"
-        tools:ignore="Autofill,HardcodedText,RtlHardcoded" />
 </androidx.constraintlayout.widget.ConstraintLayout>
