@@ -7,7 +7,7 @@
     tools:context=".activity.LoginActivity">
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/buttonEntrar"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -19,11 +19,11 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName6"
+        app:layout_constraintTop_toBottomOf="@+id/editSenha"
         tools:ignore="HardcodedText" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName5"
+        android:id="@+id/editLogin"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -34,14 +34,14 @@
         android:ems="10"
         android:hint="Email"
         android:inputType="textWebEmailAddress"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName6"
+        app:layout_constraintBottom_toTopOf="@+id/editSenha"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView8"
         tools:ignore="Autofill,HardcodedText,RtlHardcoded" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName6"
+        android:id="@+id/editSenha"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -51,10 +51,10 @@
         android:ems="10"
         android:hint="Senha"
         android:inputType="textPassword"
-        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintBottom_toTopOf="@+id/buttonEntrar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName5"
+        app:layout_constraintTop_toBottomOf="@+id/editLogin"
         tools:ignore="Autofill,HardcodedText,RtlHardcoded" />
 
     <TextView
@@ -68,7 +68,7 @@
         android:textAlignment="center"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName5"
+        app:layout_constraintBottom_toTopOf="@+id/editLogin"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"

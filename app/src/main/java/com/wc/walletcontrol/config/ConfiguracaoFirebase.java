@@ -6,7 +6,7 @@ public class ConfiguracaoFirebase {
 
     private static FirebaseAuth autenticacao;
 
-    //retorna a instacia do FirebaseAuth
+    //retorna a instancia do FirebaseAuth
     public static FirebaseAuth getFirebaseAutenticacao(){
         if( autenticacao == null){
             autenticacao = FirebaseAuth.getInstance();

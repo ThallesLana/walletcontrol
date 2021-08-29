@@ -5,17 +5,22 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/imagologowc"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/imagologowc_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.WalletControl"
         tools:ignore="AllowBackup">
+        <activity
+            android:name=".activity.PrincipalActivity"
+            android:label="@string/title_activity_principal"
+            android:theme="@style/Theme.WalletControl.NoActionBar" />
         <activity android:name=".activity.CadastroActivity" />
         <activity android:name=".activity.LoginActivity" />
         <activity
             android:name=".activity.MainActivity"
-            android:theme="@style/Theme.Intro">
+            android:theme="@style/Theme.Intro"
+            tools:ignore="IntentFilterExportedReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
