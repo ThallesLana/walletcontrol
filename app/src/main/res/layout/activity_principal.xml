@@ -23,6 +23,7 @@
 
     <include layout="@layout/content_principal" />
 
+    <!-- Button floating action menu -->
     <com.github.clans.fab.FloatingActionMenu
         android:id="@+id/menu"
         android:layout_width="wrap_content"
@@ -33,12 +34,13 @@
         fab:menu_colorNormal="@color/colorAccent"
         fab:menu_colorPressed="@color/colorPressed"
         >
-
+        <!-- Button despesa -->
         <com.github.clans.fab.FloatingActionButton
-            android:id="@+id/menu_item"
+            android:id="@+id/menu_despesa"
+            android:onClick="addDespesa"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_add_24"
+            android:src="@drawable/ic_money_off_24"
             fab:fab_colorNormal="@color/colorPrimaryDespesa"
             fab:fab_colorPressed="@color/colorPrimaryDarkDespesa"
             app:fab_colorRipple="@color/colorAccentDespesa"
@@ -46,11 +48,13 @@
             fab:fab_size="mini"
             />
 
+        <!-- Button receita -->
         <com.github.clans.fab.FloatingActionButton
-            android:id="@+id/menu_item1"
+            android:id="@+id/menu_receita"
+            android:onClick="addReceita"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_add_24"
+            android:src="@drawable/ic_money_on_24"
             fab:fab_colorNormal="@color/colorPrimaryReceita"
             fab:fab_colorPressed="@color/colorPrimaryDarkReceita"
             app:fab_colorRipple="@color/colorAccentReceita"

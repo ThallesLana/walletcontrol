@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <item name="menu" type="id" />
-    <item name="menu_item" type="id" />
+    <item name="menu_despesa" type="id" />
+    <item name="menu_receita" type="id" />
 </resources>
