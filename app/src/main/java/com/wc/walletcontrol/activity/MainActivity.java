@@ -78,7 +78,7 @@ public class MainActivity extends IntroActivity {
     public void verificarUsuarioLogado(){
         autenticacao = ConfiguracaoFirebase.getFirebaseAutenticacao();
         // volta o usuario para a tela inicial ao inves de logar automaticamente
-        // autenticacao.signOut();
+        autenticacao.signOut();
         if (autenticacao.getCurrentUser() != null) {
             abrirTelaPrincipal();
         }
