@@ -9,6 +9,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/imagologowc_round"
         android:supportsRtl="true"
+        android:exported="true"
         android:theme="@style/Theme.WalletControl"
         tools:ignore="AllowBackup" >
         <activity
@@ -23,18 +24,20 @@
 
         <activity
             android:name=".activity.PrincipalActivity"
+            android:exported="true"
             android:label="@string/title_activity_principal"
             android:theme="@style/Theme.WalletControl.NoActionBar" />
-        <activity android:name=".activity.CadastroActivity" />
-        <activity android:name=".activity.LoginActivity" />
+        <activity android:name=".activity.CadastroActivity" android:exported="true"/>
+        <activity android:name=".activity.LoginActivity" android:exported="true" />
         <activity
             android:name=".activity.MainActivity"
+            android:exported="true"
             android:theme="@style/Theme.Intro"
             tools:ignore="IntentFilterExportedReceiver" >
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN" android:exported="true"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LAUNCHER" android:exported="true" />
             </intent-filter>
         </activity>
     </application>
