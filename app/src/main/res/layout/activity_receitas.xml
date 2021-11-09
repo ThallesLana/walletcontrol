@@ -50,6 +50,7 @@
         app:layout_constraintVertical_chainStyle="packed">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editData"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Ex: 01/01/2021"
@@ -69,6 +70,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout5">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editCategoria"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Ex: salário"
@@ -88,6 +90,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout4">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editDescricao"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Ex: salário mensal"
@@ -108,6 +111,7 @@
         app:srcCompat="@drawable/ic_check_24"
         tools:ignore="ContentDescription,HardcodedText,VectorDrawableCompat"
         android:focusable="true"
-        android:contentDescription="TODO" />
+        android:contentDescription="TODO"
+        android:onClick="salvarReceita"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
