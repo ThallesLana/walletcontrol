@@ -91,7 +91,7 @@ public class ReceitasActivity extends AppCompatActivity {
             movimentacao.setCategoria(campoCategoria.getText().toString());
             movimentacao.setDescricao(campoDescricao.getText().toString());
             movimentacao.setData(data);
-            movimentacao.setTipo("d");
+            movimentacao.setTipo("r");
 
             receitaGerada = valorRecuperado;
             Double receitaAtualizada = receitaTotal + receitaGerada;

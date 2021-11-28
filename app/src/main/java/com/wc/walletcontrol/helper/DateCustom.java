@@ -12,7 +12,7 @@ public class DateCustom {
         long data = System.currentTimeMillis();
 
         // define a formatação da data
-        @SuppressLint("SimpleDateFormat") SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd/MM/yyyy hh:mm:ss");
+        @SuppressLint("SimpleDateFormat") SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd/MM/yyyy");
         String dataString = simpleDateFormat.format(data);
 
         return dataString;
