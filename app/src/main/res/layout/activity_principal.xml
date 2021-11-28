@@ -47,7 +47,7 @@
             app:fab_colorRipple="@color/colorAccentDespesa"
             fab:fab_label="Despesa"
             fab:fab_size="mini"
-            />
+            tools:ignore="UsingOnClickInXml" />
 
         <!-- Button receita -->
         <com.github.clans.fab.FloatingActionButton
@@ -61,7 +61,7 @@
             app:fab_colorRipple="@color/colorAccentReceita"
             fab:fab_label="Receita"
             fab:fab_size="mini"
-            />
+            tools:ignore="UsingOnClickInXml" />
 
     </com.github.clans.fab.FloatingActionMenu>
 
