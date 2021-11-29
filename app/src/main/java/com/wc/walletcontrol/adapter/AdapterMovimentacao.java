@@ -1,13 +1,16 @@
 package com.wc.walletcontrol.adapter;
 
 import android.annotation.SuppressLint;
+
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+
 import androidx.annotation.NonNull;
+
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.wc.walletcontrol.R;
@@ -26,15 +29,12 @@ public class AdapterMovimentacao extends RecyclerView.Adapter<AdapterMovimentaca
         this.context = context;
     }
 
-    @NonNull
     @Override
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View itemLista = LayoutInflater.from(parent.getContext()).inflate(R.layout.adapter_movimentacao, parent, false);
         return new MyViewHolder(itemLista);
     }
 
-
-    @SuppressLint("SetTextI18n")
     @Override
     public void onBindViewHolder(MyViewHolder holder, int position) {
         Movimentacao movimentacao = movimentacoes.get(position);
@@ -50,13 +50,12 @@ public class AdapterMovimentacao extends RecyclerView.Adapter<AdapterMovimentaca
         }
     }
 
-
     @Override
     public int getItemCount() {
         return movimentacoes.size();
     }
 
-    public static class MyViewHolder extends RecyclerView.ViewHolder {
+    public class MyViewHolder extends RecyclerView.ViewHolder {
 
         TextView titulo, valor, categoria;
 
