@@ -17,9 +17,9 @@ public class MainActivity extends IntroActivity {
         // setContentView(R.layout.activity_main);
 
         // Oculta o botão Back
-        setButtonBackVisible(false);
+        setButtonBackVisible(true);
         // Oculta o botão next
-        setButtonNextVisible(false);
+        setButtonNextVisible(true);
 
         // Adicionando slides iniciais ao projeto
         addSlide( new FragmentSlide.Builder()
