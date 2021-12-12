@@ -5,7 +5,7 @@
 ### The walletcontrol initiative is based on the creation of an application to control financial expenses and spending. Wallet Control's main objective is to gather the client's entire financial life in just a few clicks so that he can organize his expenses and take care of his personal finances without complications. With an intuitive and pleasant interface, humorous messages according to the client's monetary movement, notifications, the app brings ease and practicality to the user's life.
 
 # ✅ Project Status:
-### 🚧 walletcontrol 💵 Under construction... 🚧
+### ✅ walletcontrol 💵 Ending! ✅
 
 # 💻 Languages and Tools used in the project:
 [![Figma Badge](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)](https://www.figma.com)
